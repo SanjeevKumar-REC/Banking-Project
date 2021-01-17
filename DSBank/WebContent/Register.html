@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Opning Form</title>
+    <link type="text/css" rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <h1 style=" color: lavenderblush; background-color:rgba(0, 0, 0, 0.3);text-align: center; top: 0px;" >Account Opening Form</h1>
+  <div class="registerbox">
+      <h1>Register</h1>
+        <form action="Register" method="post" >
+            <table>
+                <tr><td><p>Create Password</p></td><td><input type="password" name="pass" placeholder="Enter password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$&_]).{6,15}" title="must contain 1 capital letter,1 small letter,1 number and 1 symbol(@#$&_),length minimum 6" required autofocus></td></tr>
+                <tr><td><p>Enter Name</p></td><td><input type="text" name="name" placeholder="Enter Full Name" required></td> </tr>
+                <tr><td><p>Enter Aadhar ID</p></td><td><input type="number" name="aad" placeholder="254566554414" required maxlength="12"></td></tr>
+                <tr><td><p>Enter PAN card ID</p></td><td><input type="text" name="pan" placeholder="XaEg12324" required ></td></tr>
+                <tr><td><p>Enter Mobile No.</p></td><td><input type="number" name="phone" placeholder="+91 3554455154" required maxlength="13"></td></tr>
+                <tr><td><p>Enter Email ID</p></td><td><input type="email" name="email" placeholder="abc@gmail.com" required></td></tr>
+                <tr><td><p>Enter DOB</p></td><td><input type="date" name="dob" required></td></tr>
+                <tr><td><p>Gender</p></td>
+                    <td> <input type="radio" name="gender" value="Male" required>Male
+                    <input type="radio" name="gender" value="Female" required>Female
+                    <input type="radio" name="gender" value="Other" required>Other</td></tr>
+                    <tr><td><p>Address</p></td>
+                    <td> <textarea name="add" id="" cols="25" rows="4" placeholder="Full Address" required></textarea></td></tr>
+                    <tr><td><p>Country</p></td>
+                    <td><select name="countery" id="">
+                        <option>select country</option>
+                        <option>India</option>
+                        <option>Nepal</option>
+                        <option>Bhutan</option>
+                        <option>Bangladesh</option>
+                        <option>Myanmar</option>
+                        <option>Sri Lanka</option>
+                    </select></td></tr>
+                    
+                    <tr><td><p>State</p></td>
+                    <td><input type="text" name="state" placeholder="eg:-Bihar"></td></tr>
+                    <tr><td><p>City</p></td>
+                    <td><input type="text"  name="city"></td></tr>
+                    <tr><td><p>PIN Code</p></td>
+                        <td><input type="number" name="pin" placeholder="ge:-8400006" maxlength="8"></td></tr>
+            </table>
+                    <center>
+                        <br><br>
+                        <input type="submit" value="Submit" required>
+                        <br><br>
+                    <b> Already Register click?</b><a href="Home.html">here</a>
+                    </center>
+            
+        </form>
+  </div>  
+</body>
+</html>

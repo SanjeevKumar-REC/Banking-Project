@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+</head>
+<style>
+    *
+{
+ margin: 0px;  
+ padding: 0px; 
+}
+
+body{
+background-image: url(deposit.jpg);
+background-repeat:no-repeat;
+background-size: cover;
+font-family: sans-serif;
+}
+
+
+.depositbox{
+    width: 320px;
+    height: 275px;
+    background-color:rgba(0,0, 0,0.6);
+    
+    color: #fff;
+    top: 45%;
+    left: 50%;
+    margin-bottom: 5%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 30px;
+}
+h1{
+   margin: 0px;
+   padding: 0 0 20px;
+   text-align: center; 
+   font-size: 22px;
+}
+.depositbox p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+.depositbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.depositbox input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+
+}
+.depositbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    background-color:lavender;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.depositbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.depositbox a{
+  text-decoration: none;  
+  font-size: 12px;
+  line-height: 20px;
+  color:lightsteelblue;
+}
+.depositbox a:hover{
+    color: #ffc107;
+}
+</style>
+<body>
+   <div class="depositbox">
+    <h1>Deposit Here</h1>
+        <form action="Deposit" method="post">
+            <p>Enter Deposit Amount</p>
+            <input type="number" name="deposit" placeholder="Enter Deposit Amount" maxlength="6" title="Max Deposit amounr is 49000.00" required>
+            <input type="submit" value="Deposit">
+            <a href="Menu.html">Goto Home Page</a>
+        </form>
+   </div> 
+</body>
+</html>

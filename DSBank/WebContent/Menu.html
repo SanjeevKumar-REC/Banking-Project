@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body
+    {   margin:0;
+        padding: 0;
+        background-image: url(image5.jpg);
+      	 background-position:center;
+        background-size: 100%;
+        background-top:10%;
+        
+    }
+    h1{
+    text-align: center;
+    font-family:sans-serif;
+    top: 100px;
+    font-size: 50px;
+    color: white;
+}
+#manu{
+    width: 80%;
+    height: 100px;
+    margin: 0px auto;
+    padding: 0px;
+}
+#menu ul
+{
+    padding: 0px;
+}
+#menu ul li
+{
+    float: left;
+    background:rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 195px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    list-style: none;
+   
+}
+
+#menu ul li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    
+}
+#menu ul li a:hover
+{
+    background-color: green;
+    border-radius: 8px;
+}
+#menu ul ul
+{
+    display: none;
+}
+#menu ul li:hover>ul
+{
+    display: block;
+}
+</style>
+<body>
+    <div id="menu">
+        <h1>WELCOME TO DIGETAL BANK</h1>
+        <ul> <li><a href="#"><i class="fa fa-home" style="font-size:24px"> Home</i></a></li>
+            <li><a href="index.html"><i class="fa fa-sign-in" style="font-size:24px"> Login</i></a></li>
+            <li><a href="Register.html"><i class="fa fa-registered" style="font-size:24px"> Register</i></a></li>
+            <li><a href="#"><i class="fa fa-bank" style="font-size:24px"> Bank <i class="fa fa-terminal" style="font-size:24px"></i></i></a>
+                <ul>
+                    <li><a href="Enquary.html">Balance Enquiry</a></li>
+                    <li><a href="Deposit.html">Deposit</a></li>
+                    <li><a href="withdrawal.html">Withdrawal</a></li>                    
+                    <li><a href="Transfer.html">Transfer</a></li>
+                    <li><a href="Statement.html">Statement</a></li>
+                    <li><a href="TransactionHistory.html">Transition History</a></li>
+                </ul>
+            </li>
+            <li><a href="Profile.html"><i class="fa fa-user-circle-o" style="font-size:24px">Profile</i></a></li>
+            <li><a href="#"><i class="fa fa-info" style="font-size:24px"> About</i></a></li>
+            <li><a href="#"><i class="fa fa-phone" style="font-size:24px"> Contact</i></a></li>
+        </ul>
+    </div>
+</body>
+</html>

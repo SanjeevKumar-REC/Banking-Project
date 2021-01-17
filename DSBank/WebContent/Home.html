@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="mystyle.css">
+    
+</head>
+
+<body>
+    
+    <div class="loginbox">
+        <img src="login.jpg" class="avatar">
+        <h1>Login Here</h1>
+        <form action="">
+            <p>User ID</p>
+            <input type="text" name="user" placeholder="Enter User ID" pattern="(?=.*[0-9]).{11}" title="write youe account number" autofocus>
+            <p>Password</p>
+            <input type="password" name="pass" placeholder="Enter Password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$&_]).{6,15}" title="must contain 1 capital letter,1 small letter,1 number and 1 symbol(@#$&_),length minimum 6" required>
+            <input type="submit" value="Login">
+            <a href="#">Lost your Password?</a><br>
+            <a href="Register.html">Don't have an account?</a>
+        </form>
+    </div>
+</body>
+</html>
